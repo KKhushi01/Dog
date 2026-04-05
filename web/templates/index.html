@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>SpotMicro Control</title>
+    <style>
+      body { font-family: sans-serif; background: #111; color: #eee; text-align: center; }
+      .controls { margin-top: 20px; }
+      button {
+        padding: 10px 20px;
+        margin: 5px;
+        font-size: 16px;
+        border-radius: 6px;
+        border: none;
+        cursor: pointer;
+      }
+      .stand { background: #2ecc71; }
+      .sit { background: #e67e22; }
+      img { border-radius: 8px; border: 2px solid #444; margin-top: 15px; }
+    </style>
+  </head>
+  <body>
+    <h1>Tommy</h1>
+
+    <img src="{{ url_for('video_feed') }}" width="640" height="480" />
+
+    <div class="controls">
+      <form action="{{ url_for('stand') }}" method="get" style="display:inline;">
+        <button class="stand">Stand</button>
+      </form>
+      <form action="{{ url_for('sit') }}" method="get" style="display:inline;">
+        <button class="sit">Sit</button>
+      </form>
+    </div>
+  </body>
+</html>
