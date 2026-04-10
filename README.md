@@ -25,6 +25,9 @@ Software
 -
 - Python
 
+- Inverse Kinematics for walking
+
 - OpenCV for object detection
 
-- Integrate GPS/mapping in future 
+- Integrate GPS/mapping in future
+  
